@@ -26,7 +26,7 @@
             $sum = trim($_POST['sum']);
             $result = '';
             $rate = '';
-//
+
             try {
                 $client  = new SoapClient("http://www.webservicex.net/CurrencyConvertor.asmx?WSDL");
                 $params = array('FromCurrency' => $from, 'ToCurrency' => $to);
